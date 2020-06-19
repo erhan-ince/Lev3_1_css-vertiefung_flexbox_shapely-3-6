@@ -28,7 +28,7 @@ header h1:hover {
 li:hover {
    color: #337ab7;
 }
-section {
+section:first-of-type {
    background: url(https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1443527216320-7e744084f5a7-1.jpg)
       center/cover no-repeat;
    height: 100vh;
@@ -39,19 +39,23 @@ section {
    color: white;
    text-align: center;
 }
-section h1 {
-   font-size: 5em;
+section:first-of-type h1 {
+   font-size: 4em;
+   font-weight: 100;
    margin-bottom: 0;
 }
-div {
+section:first-of-type p {
+   color: white;
+}
+div:first-of-type {
    height: 100px;
 }
-div button {
+div:first-of-type button {
    height: 50px;
    width: 200px;
    color: white;
 }
-button:first-of-type {
+div:first-of-type button:first-of-type {
    background: #745cf9;
    border: 1px solid transparent;
 }
@@ -59,14 +63,38 @@ button:last-of-type {
    background: transparent;
    border: 1px solid white;
 }
-button:first-of-type:hover {
+div:first-of-type button:first-of-type:hover {
    background: #5234f9;
 }
-button:last-of-type:hover {
+div:first-of-type button:last-of-type:hover {
    background: white;
    color: black;
 }
-/* Die verwendete Schriftart: Raleway
-Die Farbe des Button “Read more” ist: #745cf9
-Die Farbe des Button:hover “Read more” ist: #5234f9
-Der Link des Fotos: https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1443527216320-7e744084f5a7-1.jpg */
+#macbook {
+   /* display: flex; */
+   margin-top: 5%;
+   margin-left: 25%;
+   /* height: 100vh; */
+}
+#divmac {
+   /* display: flex; */
+   height: auto;
+}
+.imgmac {
+   width: 50%;
+}
+.seoButton {
+   background: #745cf9;
+   border: 1px solid transparent;
+}
+#macbook h3,
+p {
+   color: #666;
+   font-weight: 100;
+   width: 60%;
+}
+#macbook h3 {
+   font-size: 2em;
+   font-weight: bold;
+   color: black;
+}
